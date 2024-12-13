@@ -1,0 +1,9 @@
+targets:
+  $default:
+    sources:
+      - lib/**
+      - $package$
+    builders:
+      chopper_generator:
+        options:
+          header: "//Generated code"

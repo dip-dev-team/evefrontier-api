@@ -1,0 +1,28 @@
+name: evefrontier_api
+description: A starting point for Dart libraries or applications.
+version: 0.0.1-alpha
+homepage: https://dip.dev
+issue_tracker: https://github.com/dip-dev-team/evefrontier_api/issues
+repository: https://github.com/dip-dev-team/evefrontier_api
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  collection: ^1.19.0
+  chopper: ^8.0.3
+  built_value: ^8.9.2
+  built_collection: ^5.1.1
+  chopper_built_value: ^3.0.2
+
+dev_dependencies:
+  lints: ^5.1.0
+  test: ^1.25.12
+  build_runner: ^2.4.13
+  chopper_generator: ^8.0.3
+  built_value_generator: ^8.9.2
+
+topics:
+  - game
+  - api
+  - eve
