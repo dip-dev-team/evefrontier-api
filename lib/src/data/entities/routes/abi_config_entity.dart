@@ -12,12 +12,12 @@ abstract class AbiConfigEntity
   static Serializer<AbiConfigEntity> get serializer =>
       _$abiConfigEntitySerializer;
 
-  @BuiltValue(wireName: 'base_dapp_url')
+  @BuiltValueField(wireName: 'base_dapp_url')
   String get baseDappUrl;
   BuiltList<AbiCfgEntity> get cfg;
-  @BuiltValue(wireName: 'system_ids')
+  @BuiltValueField(wireName: 'system_ids')
   SystemIdsEntity get systemIds;
-  @BuiltValue(wireName: 'vault_dapp_url')
+  @BuiltValueField(wireName: 'vault_dapp_url')
   String get vaultDappUrl;
 
   AbiConfigEntity._();

@@ -11,9 +11,9 @@ abstract class AllTypesDataEntity
 
   BuiltList<AllTypesDataAttributesEntity> get attributes;
 
-  String get description;
-  String get name;
-  String get smartItemId;
+  String? get description;
+  String? get name;
+  String? get smartItemId;
 
   AllTypesDataEntity._();
   factory AllTypesDataEntity(

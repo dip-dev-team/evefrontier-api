@@ -17,6 +17,7 @@ import 'models/rpc_urls_entity.dart';
 import 'models/system_ids_entity.dart';
 import 'routes/abi_cfg_entity.dart';
 import 'routes/abi_config_entity.dart';
+import 'routes/abi_entity.dart';
 import 'routes/eip_entity.dart';
 import 'routes/erc_entity.dart';
 import 'routes/heatlhy_entity.dart';
@@ -53,6 +54,7 @@ export 'routes/abi_cfg_entity.dart';
 export 'routes/abi_config_entity.dart';
 export 'routes/eip_entity.dart';
 export 'routes/erc_entity.dart';
+export 'routes/abi_entity.dart';
 export 'routes/heatlhy_entity.dart';
 export 'routes/urls_entity.dart';
 export 'types/all_types_data_entity.dart';
@@ -87,6 +89,7 @@ part 'entities.g.dart';
   RpcUrlsEntity,
   SystemIdsEntity,
   AbiCfgEntity,
+  AbiEntity,
   AbiConfigEntity,
   EipEntity,
   ErcEntity,

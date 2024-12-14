@@ -13,7 +13,7 @@ abstract class SmartCharacterEntity
 
   String get address;
   String get corpId;
-  DateTime get createdAt;
+  int get createdAt;
   String get eveBalanceWei;
   String get gasBalanceWei;
 

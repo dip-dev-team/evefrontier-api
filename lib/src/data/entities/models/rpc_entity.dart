@@ -8,7 +8,7 @@ part 'rpc_entity.g.dart';
 abstract class RpcEntity implements Built<RpcEntity, RpcEntityBuilder> {
   static Serializer<RpcEntity> get serializer => _$rpcEntitySerializer;
 
-  @BuiltValue(wireName: 'default')
+  @BuiltValueField(wireName: 'default')
   RpcUrlsEntity get main;
   RpcUrlsEntity get public;
 

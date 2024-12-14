@@ -7,11 +7,11 @@ part 'loss_type_enum.g.dart';
 class LossTypeEnum extends EnumClass {
   static Serializer<LossTypeEnum> get serializer => _$lossTypeEnumSerializer;
 
-  @BuiltValueEnumConst(wireName: 'shipLossType')
+  @BuiltValueEnumConst(wireName: 'shipLoss')
   static const LossTypeEnum ship = _$ship;
-  @BuiltValueEnumConst(wireName: 'podLossType')
+  @BuiltValueEnumConst(wireName: 'podLoss')
   static const LossTypeEnum pod = _$pod;
-  @BuiltValueEnumConst(wireName: 'unknownLossType')
+  @BuiltValueEnumConst(wireName: 'unknownLoss')
   static const LossTypeEnum unknown = _$unknown;
 
   const LossTypeEnum._(super.name);

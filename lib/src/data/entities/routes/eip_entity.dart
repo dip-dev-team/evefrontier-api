@@ -6,8 +6,8 @@ part 'eip_entity.g.dart';
 abstract class EipEntity implements Built<EipEntity, EipEntityBuilder> {
   static Serializer<EipEntity> get serializer => _$eipEntitySerializer;
 
-  String get name;
-  String get version;
+  String? get name;
+  String? get version;
 
   EipEntity._();
   factory EipEntity([void Function(EipEntityBuilder) updates]) = _$EipEntity;

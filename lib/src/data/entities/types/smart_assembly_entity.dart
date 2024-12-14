@@ -35,8 +35,8 @@ abstract class SmartAssemblyEntity
   String get ownerName;
   ProximityModuleEntity get proximity;
   String get region;
-  SolarSystemEntity get solarSystem;
-  int get solarSystemId;
+  SolarSystemEntity? get solarSystem;
+  int? get solarSystemId;
   String get state;
   int get stateId;
   int get typeId;

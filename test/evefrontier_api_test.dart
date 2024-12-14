@@ -1,15 +1,20 @@
+import 'package:evefrontier_api/evefrontier_api.dart';
 import 'package:test/test.dart';
 
 void main() {
   group('Main group of tests', () {
-/*     final awesome = Awesome();
+    late final EVEFrontierAPI api;
 
     setUp(() {
-      // Additional setup goes here.
+      api = EVEFrontierAPI();
     });
 
     test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
-    }); */
+      api.api.getConfig().then(
+        (value) {
+          expect(value, value.isNotEmpty);
+        },
+      );
+    });
   });
 }

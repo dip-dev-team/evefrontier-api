@@ -20,7 +20,7 @@ abstract class SimpleSmartAssemblyEntity
   String get name;
   String get ownerId;
   String get ownerName;
-  SolarSystemEntity get solarSystem;
+  SolarSystemEntity? get solarSystem;
   String get state;
   int get stateId;
   int get typeId;

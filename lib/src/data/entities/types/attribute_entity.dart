@@ -21,7 +21,7 @@ abstract class AttributePropertiesEntity
   static Serializer<AttributePropertiesEntity> get serializer =>
       _$attributePropertiesEntitySerializer;
 
-  @BuiltValue(wireName: 'trait_type')
+  @BuiltValueField(wireName: 'trait_type')
   String get traitType;
 
   AttributePropertiesEntity._();

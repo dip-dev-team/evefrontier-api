@@ -8,9 +8,9 @@ abstract class LocationEntity
   static Serializer<LocationEntity> get serializer =>
       _$locationEntitySerializer;
 
-  int get x;
-  int get y;
-  int get z;
+  double get x;
+  double get y;
+  double get z;
 
   LocationEntity._();
   factory LocationEntity([void Function(LocationEntityBuilder) updates]) =

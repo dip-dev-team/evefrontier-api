@@ -12,7 +12,7 @@ abstract class InventoryModuleEntity
   static Serializer<InventoryModuleEntity> get serializer =>
       _$inventoryModuleEntitySerializer;
 
-  @BuiltValue(wireName: 'ephemeralInventoryList')
+  @BuiltValueField(wireName: 'ephemeralInventoryList')
   BuiltList<EphemeralInventoryEntity> get ephemeralInventories;
   int get storageCapacity;
   BuiltList<InventoryItemEntity> get storageItems;

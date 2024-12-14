@@ -7,7 +7,7 @@ abstract class ErcEntity implements Built<ErcEntity, ErcEntityBuilder> {
   static Serializer<ErcEntity> get serializer => _$ercEntitySerializer;
 
   String get data;
-  DateTime get deadline;
+  int get deadline;
   String get from;
   int get gas;
   String get nonce;

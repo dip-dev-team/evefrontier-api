@@ -12,11 +12,11 @@ abstract class KillMailEntity
       _$killMailEntitySerializer;
 
   CharacterEntity get killer;
-  @BuiltValue(wireName: 'loss_type')
+  @BuiltValueField(wireName: 'loss_type')
   LossTypeEnum get lossType;
-  @BuiltValue(wireName: 'solar_system_id')
+  @BuiltValueField(wireName: 'solar_system_id')
   int get solarSystemId;
-  DateTime get timestamp;
+  int get timestamp;
   CharacterEntity get victim;
 
   KillMailEntity._();

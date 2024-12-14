@@ -8,13 +8,13 @@ class SmartAssemblyEnum extends EnumClass {
   static Serializer<SmartAssemblyEnum> get serializer =>
       _$smartAssemblyEnumSerializer;
 
-  @BuiltValueEnumConst(wireName: 'SmartStorageUnitTypeEnum')
+  @BuiltValueEnumConst(wireName: 'SmartStorageUnit')
   static const SmartAssemblyEnum smartStorageUnit = _$smartStorageUnit;
-  @BuiltValueEnumConst(wireName: 'SmartTurretTypeEnum')
+  @BuiltValueEnumConst(wireName: 'SmartTurret')
   static const SmartAssemblyEnum smartTurret = _$smartTurret;
-  @BuiltValueEnumConst(wireName: 'SmartGateTypeEnum')
+  @BuiltValueEnumConst(wireName: 'SmartGate')
   static const SmartAssemblyEnum smartGate = _$smartGate;
-  @BuiltValueEnumConst(wireName: 'UnknownTypeEnum')
+  @BuiltValueEnumConst(wireName: 'Unknown')
   static const SmartAssemblyEnum unknown = _$unknown;
 
   const SmartAssemblyEnum._(super.name);
