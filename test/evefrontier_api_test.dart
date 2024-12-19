@@ -10,7 +10,7 @@ void main() {
     });
 
     test('First Test', () {
-      api.api.getConfig().then(
+      api.getConfig().then(
         (value) {
           expect(value, value.isNotEmpty);
         },

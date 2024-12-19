@@ -15,8 +15,8 @@ abstract class EphemeralInventoryEntity
   BuiltList<InventoryItemEntity> get ephemeralInventoryItems;
   String get ownerId;
   String get ownerName;
-  int get storageCapacity;
-  int get usedCapacity;
+  BigInt get storageCapacity;
+  BigInt get usedCapacity;
 
   EphemeralInventoryEntity._();
   factory EphemeralInventoryEntity(

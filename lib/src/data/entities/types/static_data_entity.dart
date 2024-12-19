@@ -5,6 +5,7 @@ import 'metadata_entity.dart';
 
 part 'static_data_entity.g.dart';
 
+// Single game type
 abstract class StaticDataEntity
     implements Built<StaticDataEntity, StaticDataEntityBuilder> {
   static Serializer<StaticDataEntity> get serializer =>

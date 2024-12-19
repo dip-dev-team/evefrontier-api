@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:isolate';
 
 import 'package:built_collection/built_collection.dart';
 import 'package:chopper/chopper.dart';
@@ -70,7 +71,18 @@ class RestRepoImpl implements RestRepo {
 
   @override
   Future<BuiltList<SolarSystemEntity>> getSolarSystems() =>
-      _game.getSolarSystems().then(_getData);
+      _game.getSolarSystems().then(_getData).then((value) async {
+        final solarSystems = await Isolate.run(() {
+          final solarSystems = List<SolarSystemEntity>.empty(growable: true);
+          for (var json in value.values) {
+            final solarSystem = entititySerializers.deserializeWith(
+                SolarSystemEntity.serializer, json);
+            if (solarSystem != null) solarSystems.add(solarSystem);
+          }
+          return solarSystems;
+        });
+        return BuiltList.from(solarSystems);
+      });
 
   @override
   Future<StaticDataEntity> getType(String id) =>
@@ -95,7 +107,8 @@ class _RestRequestInterceptor implements Interceptor {
   @override
   FutureOr<Response<BodyType>> intercept<BodyType>(
       Chain<BodyType> chain) async {
-    final request = applyHeader(chain.request, 'accept', 'application/json');
+    final request = applyHeaders(chain.request, {'accept': 'application/json'});
+
     return chain.proceed(request);
   }
 }

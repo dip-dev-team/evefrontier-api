@@ -12,15 +12,13 @@ abstract class SmartCharacterEntity
       _$smartCharacterEntitySerializer;
 
   String get address;
-  String get corpId;
-  int get createdAt;
-  String get eveBalanceWei;
-  String get gasBalanceWei;
-
-  String get id;
+  String? get corpId;
+  BigInt? get createdAt;
+  String? get eveBalanceWei;
+  String? get gasBalanceWei;
+  double? get id;
   String get image;
-
-  bool get isSmartCharacter;
+  bool? get isSmartCharacter;
   String get name;
   BuiltList<SimpleSmartAssemblyEntity> get smartAssemblies;
 

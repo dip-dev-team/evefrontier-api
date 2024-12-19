@@ -14,9 +14,9 @@ abstract class InventoryModuleEntity
 
   @BuiltValueField(wireName: 'ephemeralInventoryList')
   BuiltList<EphemeralInventoryEntity> get ephemeralInventories;
-  int get storageCapacity;
+  BigInt get storageCapacity;
   BuiltList<InventoryItemEntity> get storageItems;
-  int get usedCapacity;
+  BigInt get usedCapacity;
 
   InventoryModuleEntity._();
   factory InventoryModuleEntity(

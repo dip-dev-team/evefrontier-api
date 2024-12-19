@@ -1,30 +1,31 @@
 import 'package:evefrontier_api/evefrontier_api.dart';
+import 'package:logging/logging.dart';
 
 void main() {
-  final api = EVEFrontierAPI();
+  final api = EVEFrontierAPI(levelLog: Level.SHOUT);
 
-  api.api.getABISConfig().then((value) {
-    print(value.toString());
-  }).catchError((_) {});
-  api.api.getConfig().then((value) {
-    print(value.toString());
-  }).catchError((_) {});
-  api.api.getHealth().then((value) {
+  api.getABISConfig().then((value) {
     print(value.toString());
   });
-  api.api.getKillMails().then((value) {
+  api.getConfig().then((value) {
     print(value.toString());
-  }).catchError((_) {});
-  api.api.getSmartAssemblies().then((value) {
+  });
+  api.getHealth().then((value) {
     print(value.toString());
-  }).catchError((_) {});
-  api.api.getSmartCharacters().then((value) {
+  });
+  api.getKillMails().then((value) {
     print(value.toString());
-  }).catchError((_) {});
-  api.api.getSolarSystems().then((value) {
+  });
+  api.getSmartAssemblies().then((value) {
     print(value.toString());
-  }).catchError((_) {});
-  api.api.getTypes().then((value) {
+  });
+  api.getSmartCharacters().then((value) {
     print(value.toString());
-  }).catchError((_) {});
+  });
+  api.getSolarSystems().then((value) {
+    print(value.length);
+  });
+  api.getTypes().then((value) {
+    print(value.toString());
+  });
 }

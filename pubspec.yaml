@@ -1,6 +1,6 @@
 name: evefrontier_api
 description: Library for working with EVE Frontier online game api.
-version: 0.0.1-alpha
+version: 0.0.2-alpha
 homepage: https://dip.dev
 issue_tracker: https://github.com/dip-dev-team/evefrontier_api/issues
 repository: https://github.com/dip-dev-team/evefrontier_api
@@ -9,6 +9,7 @@ environment:
   sdk: ">=3.6.0 <4.0.0"
 
 dependencies:
+  http: ^1.2.2
   collection: ^1.19.0
   chopper: ^8.0.3
   built_value: ^8.9.2

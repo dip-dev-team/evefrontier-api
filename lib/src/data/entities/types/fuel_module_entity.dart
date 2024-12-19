@@ -9,7 +9,7 @@ abstract class FuelModuleEntity
       _$fuelModuleEntitySerializer;
 
   String get fuelAmount;
-  int get fuelConsumptionPerMin;
+  BigInt get fuelConsumptionPerMin;
   String get fuelMaxCapacity;
   String get fuelUnitVolume;
 

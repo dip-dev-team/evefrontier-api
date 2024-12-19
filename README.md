@@ -24,10 +24,13 @@ import 'package:evefrontier_api/evefrontier_api.dart';
 ## Example
 
 ```dart
-
+  final api = EVEFrontierAPI();
+  api.getSolarSystems().then((value) {
+    print(value.length);
+  });
 ```
 
-## Regenerate models
+## Generate models
 
 ```bash
 dart run build_runner build -d
