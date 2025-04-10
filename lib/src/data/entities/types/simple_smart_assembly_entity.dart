@@ -6,6 +6,7 @@ import 'solar_system_entity.dart';
 
 part 'simple_smart_assembly_entity.g.dart';
 
+/// This class represents a simple smart assembly entity, which includes various properties
 abstract class SimpleSmartAssemblyEntity
     implements
         Built<SimpleSmartAssemblyEntity, SimpleSmartAssemblyEntityBuilder> {

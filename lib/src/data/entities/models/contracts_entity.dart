@@ -5,6 +5,7 @@ import 'address_config_entity.dart';
 
 part 'contracts_entity.g.dart';
 
+/// This class represents the configuration for various contracts.
 abstract class ContractsEntity
     implements Built<ContractsEntity, ContractsEntityBuilder> {
   static Serializer<ContractsEntity> get serializer =>

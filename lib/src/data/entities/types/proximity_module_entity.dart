@@ -6,6 +6,7 @@ import 'simple_smart_assembly_entity.dart';
 
 part 'proximity_module_entity.g.dart';
 
+/// This class represents a proximity module entity, which includes various properties
 abstract class ProximityModuleEntity
     implements Built<ProximityModuleEntity, ProximityModuleEntityBuilder> {
   static Serializer<ProximityModuleEntity> get serializer =>

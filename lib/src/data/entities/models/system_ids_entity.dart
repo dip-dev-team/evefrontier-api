@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'system_ids_entity.g.dart';
 
+/// This class represents the system IDs for various actions in the game.
 abstract class SystemIdsEntity
     implements Built<SystemIdsEntity, SystemIdsEntityBuilder> {
   static Serializer<SystemIdsEntity> get serializer =>

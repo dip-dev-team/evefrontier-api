@@ -5,6 +5,7 @@ import 'location_entity.dart';
 
 part 'solar_system_entity.g.dart';
 
+/// This class represents a solar system entity, which includes its location,
 abstract class SolarSystemEntity
     implements Built<SolarSystemEntity, SolarSystemEntityBuilder> {
   static Serializer<SolarSystemEntity> get serializer =>

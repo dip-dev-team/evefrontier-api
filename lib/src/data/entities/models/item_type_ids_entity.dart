@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'item_type_ids_entity.g.dart';
 
+/// This class represents the item type IDs for a specific entity.
 abstract class ItemTypeIDsEntity
     implements Built<ItemTypeIDsEntity, ItemTypeIDsEntityBuilder> {
   static Serializer<ItemTypeIDsEntity> get serializer =>

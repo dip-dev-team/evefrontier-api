@@ -10,7 +10,7 @@ void main() {
     });
 
     test('First Test', () {
-      api.getConfig().then(
+      api.getSolarSystems().then(
         (value) {
           expect(value, value.isNotEmpty);
         },

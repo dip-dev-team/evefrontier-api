@@ -6,6 +6,7 @@ import 'simple_smart_assembly_entity.dart';
 
 part 'gate_link_module_entity.g.dart';
 
+/// This class represents a gate link module entity, which includes various properties
 abstract class GateLinkModuleEntity
     implements Built<GateLinkModuleEntity, GateLinkModuleEntityBuilder> {
   static Serializer<GateLinkModuleEntity> get serializer =>

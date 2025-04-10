@@ -6,6 +6,7 @@ import 'inventory_item_entity.dart';
 
 part 'ephemeral_inventory_entity.g.dart';
 
+//  This class represents an ephemeral inventory entity, which is a collection of
 abstract class EphemeralInventoryEntity
     implements
         Built<EphemeralInventoryEntity, EphemeralInventoryEntityBuilder> {

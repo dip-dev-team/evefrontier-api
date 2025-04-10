@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'inventory_item_entity.g.dart';
 
+/// This class represents an inventory item entity, which includes various properties
 abstract class InventoryItemEntity
     implements Built<InventoryItemEntity, InventoryItemEntityBuilder> {
   static Serializer<InventoryItemEntity> get serializer =>

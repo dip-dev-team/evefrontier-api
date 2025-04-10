@@ -114,6 +114,8 @@ part 'entities.g.dart';
   SolarSystemEntity,
   StaticDataEntity,
 ])
+
+/// This is the main serializer for the entities in the app.
 final Serializers entititySerializers = (_$entititySerializers.toBuilder()
       ..addPlugin(StandardJsonPlugin())
       ..add(Iso8601DateTimeSerializer())

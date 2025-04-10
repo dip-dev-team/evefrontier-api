@@ -7,6 +7,7 @@ import 'inventory_item_entity.dart';
 
 part 'inventory_module_entity.g.dart';
 
+/// This class represents an inventory module entity, which includes various properties
 abstract class InventoryModuleEntity
     implements Built<InventoryModuleEntity, InventoryModuleEntityBuilder> {
   static Serializer<InventoryModuleEntity> get serializer =>

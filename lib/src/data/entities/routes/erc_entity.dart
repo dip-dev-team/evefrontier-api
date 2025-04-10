@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'erc_entity.g.dart';
 
+/// This class represents the configuration for an ERC (Ethereum Request for Comments) entity.
 abstract class ErcEntity implements Built<ErcEntity, ErcEntityBuilder> {
   static Serializer<ErcEntity> get serializer => _$ercEntitySerializer;
 

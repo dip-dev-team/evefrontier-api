@@ -7,6 +7,7 @@ import 'abi_cfg_entity.dart';
 
 part 'abi_config_entity.g.dart';
 
+/// This class represents the configuration for an ABI (Application Binary Interface).
 abstract class AbiConfigEntity
     implements Built<AbiConfigEntity, AbiConfigEntityBuilder> {
   static Serializer<AbiConfigEntity> get serializer =>
