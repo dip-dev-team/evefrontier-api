@@ -1,10 +1,7 @@
 library;
 
-import 'dart:io';
-
 import 'package:built_collection/built_collection.dart';
 import 'package:evefrontier_api/src/data/repos/rest/rest_repo_impl.dart';
-import 'package:hive_ce/hive.dart';
 import 'package:logging/logging.dart';
 
 import 'src/data/entities/entities.dart';
@@ -27,7 +24,6 @@ class EVEFrontierAPI {
     Logger.root.onRecord.listen((record) {
       print('${record.level.name}: ${record.time}: ${record.message}');
     });
-    Hive.init(Directory.current.path);
   }
 
   // Chain REST API
