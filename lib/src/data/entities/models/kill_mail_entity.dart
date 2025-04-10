@@ -6,6 +6,7 @@ import 'loss_type_enum.dart';
 
 part 'kill_mail_entity.g.dart';
 
+/// This class represents a kill mail entity in the game EVE Frontier.
 abstract class KillMailEntity
     implements Built<KillMailEntity, KillMailEntityBuilder> {
   static Serializer<KillMailEntity> get serializer =>

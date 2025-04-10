@@ -4,6 +4,7 @@ import 'package:built_value/serializer.dart';
 
 part 'loss_type_enum.g.dart';
 
+/// This class represents the type of loss in a shipping context.
 class LossTypeEnum extends EnumClass {
   static Serializer<LossTypeEnum> get serializer => _$lossTypeEnumSerializer;
 

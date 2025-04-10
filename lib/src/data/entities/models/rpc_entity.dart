@@ -5,6 +5,7 @@ import 'rpc_urls_entity.dart';
 
 part 'rpc_entity.g.dart';
 
+/// This class represents the configuration for an RPC (Remote Procedure Call) entity.
 abstract class RpcEntity implements Built<RpcEntity, RpcEntityBuilder> {
   static Serializer<RpcEntity> get serializer => _$rpcEntitySerializer;
 

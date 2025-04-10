@@ -4,6 +4,7 @@ import 'package:built_value/serializer.dart';
 
 part 'all_types_data_entity.g.dart';
 
+// This class represents the configuration for all types of data entities.
 abstract class AllTypesDataEntity
     implements Built<AllTypesDataEntity, AllTypesDataEntityBuilder> {
   static Serializer<AllTypesDataEntity> get serializer =>

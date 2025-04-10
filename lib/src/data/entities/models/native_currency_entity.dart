@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'native_currency_entity.g.dart';
 
+/// This class represents the native currency of a blockchain network.
 abstract class NativeCurrencyEntity
     implements Built<NativeCurrencyEntity, NativeCurrencyEntityBuilder> {
   static Serializer<NativeCurrencyEntity> get serializer =>

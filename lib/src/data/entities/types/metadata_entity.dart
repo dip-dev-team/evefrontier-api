@@ -6,6 +6,7 @@ import 'attribute_entity.dart';
 
 part 'metadata_entity.g.dart';
 
+/// This class represents a metadata entity, which includes various properties
 abstract class MetadataEntity
     implements Built<MetadataEntity, MetadataEntityBuilder> {
   static Serializer<MetadataEntity> get serializer =>

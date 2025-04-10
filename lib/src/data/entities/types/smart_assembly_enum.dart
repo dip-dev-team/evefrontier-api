@@ -4,6 +4,7 @@ import 'package:built_value/serializer.dart';
 
 part 'smart_assembly_enum.g.dart';
 
+/// This class represents a smart assembly entity, which includes various properties
 class SmartAssemblyEnum extends EnumClass {
   static Serializer<SmartAssemblyEnum> get serializer =>
       _$smartAssemblyEnumSerializer;

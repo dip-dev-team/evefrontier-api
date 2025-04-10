@@ -9,6 +9,7 @@ import 'system_ids_entity.dart';
 
 part 'chain_config_entity.g.dart';
 
+// / This class represents the configuration for a blockchain network.
 abstract class ChainConfigEntity
     implements Built<ChainConfigEntity, ChainConfigEntityBuilder> {
   static Serializer<ChainConfigEntity> get serializer =>

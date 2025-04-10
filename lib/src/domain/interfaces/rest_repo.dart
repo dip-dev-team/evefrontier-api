@@ -21,7 +21,7 @@ abstract interface class RestRepo {
   // Game REST
   //
   // Get a list all the solar systems currently in the application
-  Future<BuiltList<SolarSystemEntity>> getSolarSystems();
+  Future<BuiltMap<String, SolarSystemEntity>> getSolarSystems();
   // Get a list all the types used in the world
   Future<AllTypesDataEntity> getTypes();
   // Get info about a single game type with the given [id]

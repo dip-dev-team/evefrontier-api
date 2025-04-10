@@ -6,6 +6,7 @@ import 'simple_smart_assembly_entity.dart';
 
 part 'smart_character_entity.g.dart';
 
+/// This class represents a smart character entity, which includes various properties
 abstract class SmartCharacterEntity
     implements Built<SmartCharacterEntity, SmartCharacterEntityBuilder> {
   static Serializer<SmartCharacterEntity> get serializer =>

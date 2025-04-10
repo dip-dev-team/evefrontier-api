@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'fuel_module_entity.g.dart';
 
+/// This class represents a fuel module entity, which contains information about the fuel amount, consumption, and capacity.
 abstract class FuelModuleEntity
     implements Built<FuelModuleEntity, FuelModuleEntityBuilder> {
   static Serializer<FuelModuleEntity> get serializer =>

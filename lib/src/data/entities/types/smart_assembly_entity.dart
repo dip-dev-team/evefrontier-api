@@ -11,6 +11,7 @@ import 'solar_system_entity.dart';
 
 part 'smart_assembly_entity.g.dart';
 
+/// This class represents a smart assembly entity, which includes various properties
 abstract class SmartAssemblyEntity
     implements Built<SmartAssemblyEntity, SmartAssemblyEntityBuilder> {
   static Serializer<SmartAssemblyEntity> get serializer =>

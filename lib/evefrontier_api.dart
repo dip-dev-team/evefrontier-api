@@ -1,7 +1,10 @@
 library;
 
+import 'dart:io';
+
 import 'package:built_collection/built_collection.dart';
 import 'package:evefrontier_api/src/data/repos/rest/rest_repo_impl.dart';
+import 'package:hive_ce/hive.dart';
 import 'package:logging/logging.dart';
 
 import 'src/data/entities/entities.dart';
@@ -9,6 +12,12 @@ import 'src/domain/interfaces/rest_repo.dart';
 
 export 'src/data/entities/entities.dart';
 
+/// This is the main class for the EVE Frontier API.
+/// It provides a simple interface to interact with the API.
+/// It uses the [RestRepo] interface to make requests to the API.
+/// It also provides a logger to log the requests and responses.
+/// You can set the log level using the [levelLog] parameter.
+/// By default, the log level is set to [Level.OFF].
 class EVEFrontierAPI {
   late final RestRepo _api;
 
@@ -18,6 +27,7 @@ class EVEFrontierAPI {
     Logger.root.onRecord.listen((record) {
       print('${record.level.name}: ${record.time}: ${record.message}');
     });
+    Hive.init(Directory.current.path);
   }
 
   // Chain REST API
@@ -42,7 +52,7 @@ class EVEFrontierAPI {
   // Game REST API
   //
   // Get a list all the solar systems currently in the application
-  Future<BuiltList<SolarSystemEntity>> getSolarSystems() =>
+  Future<BuiltMap<String, SolarSystemEntity>> getSolarSystems() =>
       _api.getSolarSystems();
   // Get a list all the types used in the world
   Future<AllTypesDataEntity> getTypes() => _api.getTypes();

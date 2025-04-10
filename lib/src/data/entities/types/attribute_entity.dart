@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'attribute_entity.g.dart';
 
+/// This class represents an attribute entity, which contains properties related to an attribute.
 abstract class AttributeEntity
     implements Built<AttributeEntity, AttributeEntityBuilder> {
   static Serializer<AttributeEntity> get serializer =>

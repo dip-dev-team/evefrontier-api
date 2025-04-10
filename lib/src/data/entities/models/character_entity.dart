@@ -3,6 +3,7 @@ import 'package:built_value/serializer.dart';
 
 part 'character_entity.g.dart';
 
+/// This class represents a character entity with an address and name.
 abstract class CharacterEntity
     implements Built<CharacterEntity, CharacterEntityBuilder> {
   static Serializer<CharacterEntity> get serializer =>
